@@ -222,13 +222,17 @@ namespace helloWorld
         }
 
         private void button14_Click(object sender, EventArgs e)
-        {
-            for(int i = 0; i < 5; i++)
+        {   
+            for(int i = 1; i < 5; i++)
             {
-                for (int i2 = 0; i2 < i; i2++)
+                string valorfinal = null;
+                for (int i2 = 1; i2 <= i; i2++)
                 {
-
+                    int valor = i * i2;
+                    valorfinal += valor;
+                    valorfinal += " ";
                 }
+                MessageBox.Show(valorfinal);
             }
         }
 
@@ -240,6 +244,5 @@ namespace helloWorld
             conta1.numero = 1;
             MessageBox.Show("Titular: " + conta1.titular + "\n" + "Saldo: " + conta1.saldo + "\n" + "Numero: " + conta1.numero);
         }
-
     }
 }
