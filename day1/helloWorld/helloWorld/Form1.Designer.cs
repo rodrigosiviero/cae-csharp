@@ -46,6 +46,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -227,11 +228,22 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Pagina 42-46";
             // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(104, 317);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 18;
+            this.button16.Text = "Exercicio13";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(286, 352);
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
@@ -277,6 +289,7 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button16;
     }
 }
 
