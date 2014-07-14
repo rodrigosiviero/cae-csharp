@@ -86,7 +86,7 @@ namespace helloWorld
             {
                 MessageBox.Show("Voce e um bom cliente");
             }   
-       else
+        else
             {
                 MessageBox.Show("Voce e milionaro");
             }
@@ -131,5 +131,115 @@ namespace helloWorld
             }
             MessageBox.Show("Imposto: " + imposto);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            int soma = 0;
+            for( int i = 1; i <= 1000; i++)
+            {
+                soma += i;
+            }
+            MessageBox.Show("Soma de 1 ate 1000: " + soma);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                int divisivel = i % 3;
+                if (divisivel == 0)
+                {
+                    MessageBox.Show("Numero multiplo: " + i);
+                }
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            int soma = 0;
+            for (int i = 1; i <= 100; i++)
+            {
+                int divisivel = i % 3;
+                if (divisivel == 0)
+                {
+                    continue;
+                }else
+                {
+                    soma += i;
+                }
+            }
+            MessageBox.Show("Soma dos Numeros: " + soma);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 30; i++)
+            {
+                bool divisivel = i % 3 == 0 || i % 4 == 0;
+                //int div3 = i % 3;
+                //int div4 = i % 4;
+                if (divisivel)
+                {
+                    MessageBox.Show("Numero multiplo: " + i);
+                }
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            int fatorial = 1;
+            for (int i = 1; i <=10; i++)
+            {
+                fatorial = fatorial * i;
+                MessageBox.Show("teste: " + fatorial);
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            int numero = 0;
+            int n1 = 0;
+            int n2 = 0;
+            while(numero <= 100)
+            {
+                n2 = n1;
+                n1 = numero;
+                MessageBox.Show("Numero:" + numero);
+                if (numero == 0 && n1 == 0 && n2 == 0)
+                {
+                    numero = 1;
+                }
+                else
+                {
+                    numero = n1 + n2;
+                }
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < 5; i++)
+            {
+                for (int i2 = 0; i2 < i; i2++)
+                {
+
+                }
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Conta conta1 = new Conta();
+            conta1.titular = "Rodrigo Campos";
+            conta1.saldo = 100.0;
+            conta1.numero = 1;
+            MessageBox.Show("Titular: " + conta1.titular + "\n" + "Saldo: " + conta1.saldo + "\n" + "Numero: " + conta1.numero);
+        }
+
     }
 }
