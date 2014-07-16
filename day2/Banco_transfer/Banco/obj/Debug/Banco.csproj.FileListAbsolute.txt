@@ -1,0 +1,18 @@
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\bin\Debug\Banco.exe.config
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\bin\Debug\Banco.exe
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\bin\Debug\Banco.pdb
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.csprojResolveAssemblyReference.cache
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.Properties.Resources.resources
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.csproj.GenerateResource.Cache
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.exe
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.pdb
+c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.Form1.resources
+C:\Users\csharp4513\Desktop\Banco\Banco\bin\Debug\Banco.exe.config
+C:\Users\csharp4513\Desktop\Banco\Banco\obj\Debug\Banco.exe
+C:\Users\csharp4513\Desktop\Banco\Banco\obj\Debug\Banco.pdb
+C:\Users\csharp4513\Desktop\Banco\Banco\bin\Debug\Banco.exe
+C:\Users\csharp4513\Desktop\Banco\Banco\bin\Debug\Banco.pdb
+C:\Users\csharp4513\Desktop\Banco\Banco\obj\Debug\Banco.csprojResolveAssemblyReference.cache
+C:\Users\csharp4513\Desktop\Banco\Banco\obj\Debug\Banco.Form1.resources
+C:\Users\csharp4513\Desktop\Banco\Banco\obj\Debug\Banco.Properties.Resources.resources
+C:\Users\csharp4513\Desktop\Banco\Banco\obj\Debug\Banco.csproj.GenerateResource.Cache
