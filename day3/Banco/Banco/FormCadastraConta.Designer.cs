@@ -31,6 +31,10 @@
             this.Adicionar = new System.Windows.Forms.Button();
             this.TextoTitular = new System.Windows.Forms.TextBox();
             this.TextoNumero = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ComboTipo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Adicionar
@@ -57,11 +61,51 @@
             this.TextoNumero.Size = new System.Drawing.Size(100, 20);
             this.TextoNumero.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Nome";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Numero";
+            // 
+            // ComboTipo
+            // 
+            this.ComboTipo.FormattingEnabled = true;
+            this.ComboTipo.Location = new System.Drawing.Point(78, 100);
+            this.ComboTipo.Name = "ComboTipo";
+            this.ComboTipo.Size = new System.Drawing.Size(121, 21);
+            this.ComboTipo.TabIndex = 5;
+            this.ComboTipo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Tipo";
+            // 
             // FormCadastraConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ComboTipo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.TextoNumero);
             this.Controls.Add(this.TextoTitular);
             this.Controls.Add(this.Adicionar);
@@ -77,5 +121,9 @@
         private System.Windows.Forms.Button Adicionar;
         private System.Windows.Forms.TextBox TextoTitular;
         private System.Windows.Forms.TextBox TextoNumero;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox ComboTipo;
+        private System.Windows.Forms.Label label3;
     }
 }

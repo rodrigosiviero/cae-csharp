@@ -10,6 +10,7 @@ namespace Banco
         public int Numero { get; set; }
         public double Saldo { get; protected set; }
         public Cliente Titular { get; set; }
+        public string TipoConta { get; set; }
 
         //CTOR 
         public Conta()
