@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SaldoInsuficienteException.cs" />
     <Compile Include="TotalizadorDeTributos.cs" />
     <Compile Include="SeguroDeVida.cs" />
     <Compile Include="Cliente.cs" />

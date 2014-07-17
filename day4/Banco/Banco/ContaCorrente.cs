@@ -7,27 +7,31 @@ namespace Banco
 {
     class ContaCorrente : Conta, ITributavel
     {
-        public override bool Saca(double valorSaque)
+        public override void Saca(double valorSaque)
         {
-            if (valorSaque > this.Saldo && valorSaque != null)
+            if (valorSaque < 0.0)
             {
-                return false;
+                throw new ArgumentException();
+            }
+            else if (valorSaque > this.Saldo)
+            {
+                throw new SaldoInsuficienteException();
             }
             else
             {
                 this.Saldo -= valorSaque + 0.05;
-                return true;
+                //return true;
             }
         }
 
-        public override bool Deposita(double valorDeposito)
+        public override void Deposita(double valorDeposito)
         {
-            if (valorDeposito < 0 && valorDeposito != null)
+            if (valorDeposito < 0)
             {
-                return false;
+                throw new ArgumentException();
             }
             this.Saldo += valorDeposito - 0.10;
-            return true;
+            //return true;
         }
 
         public double CalculaTributavel()

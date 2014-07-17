@@ -17,19 +17,17 @@ namespace Banco
 
         }
 
-        public abstract bool Deposita(double valorDeposito);
+        public abstract void Deposita(double valorDeposito);
 
-        public abstract bool Saca(double valorSaque);
+        public abstract void Saca(double valorSaque);
 
         public bool Transferencia(Conta destino, double valor)
         {
             if (this.Saldo >= valor && this.Numero != destino.Numero)
             {
-                if (Saca(this.Saldo))
-                {
-                    destino.Deposita(valor);
-                    return true;
-                }
+                Saca(this.Saldo);
+                destino.Deposita(valor);
+                return true;
             }
             return false;
         }

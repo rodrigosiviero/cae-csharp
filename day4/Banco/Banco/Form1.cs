@@ -80,15 +80,15 @@ namespace Banco
             int indice = Convert.ToInt32(ComboContas.SelectedIndex);
             Conta selecionada = this.contas[indice];
 
-            if (selecionada.Deposita(valorDeposito))
+            try
             {
+                selecionada.Deposita(valorDeposito);
                 MessageBox.Show("Depositado com Sucesso");
                 TextoSaldo.Text = Convert.ToString(selecionada.Saldo);
             }
-            else
+            catch (ArgumentException ex)
             {
-                MessageBox.Show("Erro no Deposito");
-                Environment.Exit(0);
+                MessageBox.Show("Argumento Invalido");
             }
         }
 
@@ -98,14 +98,23 @@ namespace Banco
             int indice = Convert.ToInt32(ComboContas.SelectedIndex);
             Conta selecionada = this.contas[indice];
 
-            if (selecionada.Saca(valorSaque))
+            try
             {
+                selecionada.Saca(valorSaque);
                 MessageBox.Show("Saque feito com Sucesso");
                 TextoSaldo.Text = Convert.ToString(selecionada.Saldo);
             }
-            else
+            catch (ArgumentException ex)
             {
-                MessageBox.Show("Saque nao realizado");
+                MessageBox.Show("Argumento Invalido");
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                MessageBox.Show("Saldo Insuficiente");
+            }
+            finally
+            {
+                MessageBox.Show("Obrigado!");
             }
         }
 
@@ -158,6 +167,7 @@ namespace Banco
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //Old New Account method. code belo replaced by function button4_Click_1
             //int indice = Convert.ToInt32(TextoIndice.Text);
             //Conta selecionada = this.contas[indice];
             //TextoNumero.Text = Convert.ToString(selecionada.Numero);
