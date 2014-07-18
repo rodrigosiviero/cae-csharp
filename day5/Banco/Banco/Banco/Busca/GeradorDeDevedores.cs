@@ -8,9 +8,9 @@ namespace Banco.Busca
 {
     class GeradorDeDevedores
     {
-        public ISet<string> GeraList()
+        public ICollection<string> GeraList()
         {
-            ISet<string> nomes = new HashSet<string>();
+            ICollection<string> nomes = new HashSet<string>();
             for (int i = 0; i < 30000; i++)
             {
                 nomes.Add("devedor" + i);

@@ -271,5 +271,11 @@ namespace Banco
             //FormDeletaConta form = new FormDeletaConta(this);
             //form.ShowDialog();
         }
+
+        private void botaoRelatorio_Click(object sender, EventArgs e)
+        {
+            FormRelatorios form = new FormRelatorios(this.contas);
+            form.ShowDialog();
+        }
     }
 }

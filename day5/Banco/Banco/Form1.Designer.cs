@@ -58,6 +58,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.botaoImpostos = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.botaoRelatorio = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -346,7 +347,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(108, 312);
+            this.button5.Location = new System.Drawing.Point(285, 312);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 15;
@@ -354,11 +355,22 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // botaoRelatorio
+            // 
+            this.botaoRelatorio.Location = new System.Drawing.Point(110, 311);
+            this.botaoRelatorio.Name = "botaoRelatorio";
+            this.botaoRelatorio.Size = new System.Drawing.Size(75, 23);
+            this.botaoRelatorio.TabIndex = 16;
+            this.botaoRelatorio.Text = "Relatorios";
+            this.botaoRelatorio.UseVisualStyleBackColor = true;
+            this.botaoRelatorio.Click += new System.EventHandler(this.botaoRelatorio_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 347);
+            this.Controls.Add(this.botaoRelatorio);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.botaoImpostos);
             this.Controls.Add(this.button4);
@@ -413,6 +425,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button botaoImpostos;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button botaoRelatorio;
     }
 }
 

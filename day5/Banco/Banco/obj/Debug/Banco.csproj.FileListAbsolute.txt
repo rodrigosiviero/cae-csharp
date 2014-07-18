@@ -8,3 +8,4 @@ c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\
 c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.pdb
 c:\users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.Form1.resources
 C:\Users\csharp4513\Documents\Visual Studio 2013\Projects\Banco\Banco\obj\Debug\Banco.FormCadastraConta.resources
+C:\Users\csharp4513\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.FormRelatorios.resources
